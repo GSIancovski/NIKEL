@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nikel</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body id="login">
+        <main>
+            <div class="container">
+                <div class="row vh-100">
+                    <div class="col d-flex justify-content-center my-5 flex-column">
+                        <div class="text-login">
+                            <p>Organize suas finâncias de uma forma fácil.</p>
+                            <p>Controle o seu dinheiro e investimentos.</p>
+                            <p>Economize e antinja seus objetivos.</p>
+                        </div>
+                        <div class="text-center">
+                            <img src="./assets/images/pocket.png" alt="" class="img-fluid" srcset="">
+                            <img src="./assets/images/coins.png" alt="" class="img-fluid d-none d-md-inline coins" srcset="">
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center my-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text-center mt-5">
+                                        <img src="./assets/images/nikel-logo.png" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <form id="form-login">
+                                        <div class="mb-3">
+                                          <label for="email-input" class="form-label">Email</label>
+                                          <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text">Utilize seu email para realizar o login</div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="password-input" class="form-label">Senha</label>
+                                          <input type="password" class="form-control" id="password-input">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="session-check">
+                                          <label class="form-check-label" for="session-check">Permanecer logado</label>
+                                        </div>
+                                        <button type="submit" class="btn button-login">Entrar</button>
+                                      </form>
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col text-center mt-2 form-text" data-bs-toggle="modal" data-bs-target="#register-modal">
+                                    <p id="link-conta" class="form-text">Ainda não tem uma conta? <span class="link-default" >Criar uma conta</span></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center mt-5">
+                                    <img src="./assets/images/codai-logo.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="./assets/images/growdev-logo.png" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+  
+  <!-- Modal -->
+    <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Crie sua Conta</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="create-form">
+                <div class="modal-body">
+                    
+                        <div class="mb-3">
+                        <label for="email-create-input" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email-create-input" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">Utilize seu email para criar a conta.</div>
+                        </div>
+                        <div class="mb-3">
+                        <label for="password-creat-input" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="password-creat-input" required>
+                        <div id="emailHelp" class="form-text">Utilize uma senha fácil de lembrar e anote para não esquecer.</div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn button-default">Criar conta</button>
+                </div>
+            
+            </form>
+            </div>
+        </div>
+    </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
